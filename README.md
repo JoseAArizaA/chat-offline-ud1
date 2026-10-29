@@ -1,37 +1,29 @@
-# Chat Offline — Plantilla de partida
+# Chat Offline - Proyecto UD1 (Acceso a Datos)
 
-**2.º DAM · Acceso a Datos · UD1**
+Aplicación de chat desarrollada en Java para la gestión offline de usuarios y conversaciones mediante persistencia XML y procesamiento de datos con la Stream API.
 
-Esta plantilla proporciona **las clases de modelo completas** y **los métodos de lógica sin implementar**. No es una solución terminada.
+## 🚀 Funcionalidades Principales
 
-## Requisitos
-- JDK 17 o posterior
-- Maven
+- **Registro de usuarios:** Sistema de alta con validación de duplicados y persistencia en `usuarios.xml`.
+- **Envío de mensajes:** Intercambio de mensajes entre usuarios registrados guardados en `mensajes.xml`.
+- **Consulta de conversaciones:** Historial completo filtrado de forma bidireccional entre dos usuarios.
+- **Estadísticas con Streams:** Generación de informes analíticos utilizando la API de Streams de Java y `Collectors.groupingBy`.
+- **Exportación a texto plano:** Volcado de historiales a ficheros `.txt` mediante `BufferedWriter`.
+- **Gestión de archivos adjuntos:** Copia de seguridad física de ficheros hacia la carpeta `media/` empleando flujos binarios (`InputStream`/`OutputStream`) con control de metadatos en el XML.
 
-## Ejecutar
-Desde la carpeta del proyecto:
+## 🛠️ Tecnologías y Requisitos Técnicos
 
-```bash
-mvn compile exec:java
-```
+- **Java** (JDK 17+)
+- **JAXB** (Java Architecture for XML Binding) para el mapeo y serialización de objetos.
+- **Java Stream API** para operaciones de filtrado y conteo.
+- **Java I/O / NIO** para la manipulación de flujos de texto y binarios.
 
-## Orden de desarrollo
-1. `GestorXML`: guardar y leer usuarios con JAXB; `GestorChat.registrarUsuario`.
-2. `GestorXML`: guardar y leer mensajes; `GestorChat.enviarMensaje`.
-3. `GestorChat.consultarConversacion`: recuperar mensajes entre dos usuarios en ambos sentidos.
-4. `GestorChat.estadisticas` con Java Stream API y `exportarConversacion` a TXT.
-5. `GestorChat.adjuntarArchivo`: copiar binarios a `media/`, validar y guardar referencia XML.
-6. `Main`: construir y probar el menú progresivamente, desde la fase 1.
+## ▶️ Cómo ejecutar la aplicación
 
-**Importante:** `java.util.stream.Stream` (procesamiento de colecciones) y `InputStream`/`OutputStream` (flujos de bytes) son conceptos distintos. El enunciado pide ambos.
+1. Abre el proyecto en **IntelliJ IDEA**.
+2. Navega hasta la clase `Main.java` (en el paquete `es.iesfranciscodelosrios.chat`).
+3. Haz clic en el botón verde de **Run** situado en el margen izquierdo o pulsa el acceso rápido para iniciar el menú interactivo por consola.
 
-Los métodos pendientes lanzan `UnsupportedOperationException` deliberadamente. Sustituid esa línea por vuestra implementación.
+## 👨‍💻 Autor
 
-`usuarios.xml` y `mensajes.xml` deben generarse desde Java. No es necesario crearlos manualmente.
-
-### Comprobaciones mínimas
-- Registrar dos usuarios, cerrar el programa y comprobar que siguen existiendo al reabrirlo.
-- Enviar mensajes en ambos sentidos, cerrar y comprobar que persisten.
-- Consultar solo los mensajes entre dos usuarios.
-- Contar mensajes con Stream API y exportar a TXT.
-- Copiar un adjunto binario y almacenar su referencia; si desaparece, conservar el mensaje.
+**Jose Antonio Ariza Aguilera**
