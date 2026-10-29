@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mensajes>
+    <mensaje>
+        <emisor>Jose</emisor>
+        <destinatario>Miguel</destinatario>
+        <contenido>Hola que tal</contenido>
+        <fecha>2026-10-29T18:04:41.8760992</fecha>
+        <adjuntoTamano>0</adjuntoTamano>
+    </mensaje>
+    <mensaje>
+        <emisor>Miguel</emisor>
+        <destinatario>Jose</destinatario>
+        <contenido>Bien y tu?</contenido>
+        <fecha>2026-10-29T18:05:06.816844</fecha>
+        <adjuntoTamano>0</adjuntoTamano>
+    </mensaje>
+    <mensaje>
+        <emisor>Jose</emisor>
+        <destinatario>Miguel</destinatario>
+        <contenido>Bien, aqui en el casa juan</contenido>
+        <fecha>2026-10-29T18:05:18.4956027</fecha>
+        <adjuntoTamano>0</adjuntoTamano>
+    </mensaje>
+    <mensaje>
+        <emisor>Jose</emisor>
+        <destinatario>Miguel</destinatario>
+        <contenido>Prueba 1</contenido>
+        <fecha>2026-10-29T18:08:04.8904809</fecha>
+        <adjuntoRuta>media\chat.txt</adjuntoRuta>
+        <adjuntoNombre>chat.txt</adjuntoNombre>
+        <adjuntoTamano>219</adjuntoTamano>
+        <adjuntoTipo>txt</adjuntoTipo>
+    </mensaje>
+    <mensaje>
+        <emisor>Jose</emisor>
+        <destinatario>Miguel</destinatario>
+        <contenido>Prueba2</contenido>
+        <fecha>2026-10-29T18:11:37.5125715</fecha>
+        <adjuntoRuta>media\prueba de la opcion 6.txt</adjuntoRuta>
+        <adjuntoNombre>prueba de la opcion 6.txt</adjuntoNombre>
+        <adjuntoTamano>0</adjuntoTamano>
+        <adjuntoTipo>txt</adjuntoTipo>
+    </mensaje>
+</mensajes>

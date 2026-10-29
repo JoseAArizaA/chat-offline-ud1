@@ -1,0 +1,4 @@
+--- Historial de conversación entre Jose y Miguel ---
+-2026-10-29T18:04:41.8760992: Jose: Hola que tal
+-2026-10-29T18:05:06.816844: Miguel: Bien y tu?
+-2026-10-29T18:05:18.4956027: Jose: Bien, aqui en el casa juan
